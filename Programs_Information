@@ -74,6 +74,7 @@ for page in range(12): #we have 13 pages that's why i put range with 12
     time.sleep(3)
     #gleicher Code mit Loop 1
     for first_page in links:
+    try except wird genutzt, um den Code ununterbrochen laufen zu lassen und falsche Seiten zu überspringen
         try:
             href = first_page.get_attribute('href')
             time.sleep(2)
